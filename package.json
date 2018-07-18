@@ -1,0 +1,9 @@
+{
+	"name": "ASL_PWA_Project",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"start": "index.html"
+		},
+	"dependencies": {}
+}
