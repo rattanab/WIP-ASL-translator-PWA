@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +16,9 @@
 
     <link rel="manifest" href="/manifest.json">
 
-      <!-- Bootstrap -->
-      <!--<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">-->
-      <!--<link rel="stylesheet" type="text/javascript" href="scripts/bootstrap.min.js">-->
+    <!-- Bootstrap -->
+    <!--<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" type="text/javascript" href="scripts/bootstrap.min.js">-->
 
     <!-- Add to home screen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -29,48 +29,50 @@
     <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
     <meta name="msapplication-TileColor" content="#2F3BA2">
 
-      <script type="text/javascript" src="word.json"></script>
-    <script type="text/javascript" src="phase.json"></script>
+    <script type="text/javascript" src="word.json"></script>
+    <script type="text/javascript" src="phrase.json"></script>
 
     <link rel="icon"
-         type="image/png"
-         href="images/icons/icon-144x144.png">
+          type="image/png"
+          href="images/icons/icon-144x144.png">
     <style>
-      video {
-        width: 100%;
-        height: auto;
-      }
+        video {
+            width: 100%;
+            height: auto;
+        }
     </style>
 
-  </head>
-  <body>
+</head>
+<body>
 
-    <nav class="nav-extended">
-      <div class="nav-wrapper blue darken-4">
+<nav class="nav-extended">
+    <div class="nav-wrapper blue darken-4">
         <a href="#" class="brand-logo center">WIP ASL translator PWA</a>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <main class="container">
-      <div class="row">
+<main class="container">
+    <div class="row">
         <div class="col s12">
             <h5>Enter your message</h5>
-          <input id="searchText" type="text" class="validate">
-          <button class="waves-effect waves-light btn-large" id="searchButton" type="button" name="button">
-            Submit
-          </button>
+            <input id="searchText" type="text" class="validate">
+            <button class="waves-effect waves-light btn-large" id="searchButton" type="button" name="button">
+                Submit
+            </button>
             <div class="card blue-grey darken-1">
                 <div class="card-content white-text">
                     <span class="card-title">Your message</span>
-                        <video id="video" class="responsive-video" auto autoplay loop hidden>
-                        </video>
-                    <p><div id="display">DISPLAY</div></p>
+                    <video id="video" class="responsive-video" auto autoplay loop hidden>
+                    </video>
+                    <p>
+                    <div id="display">DISPLAY</div>
+                    </p>
                 </div>
             </div>
         </div>
-      </div>
-    </main>
+    </div>
+</main>
 
-    <script type="text/javascript" src="scripts/app.js"></script>
-  </body>
+<script type="text/javascript" src="scripts/app.js"></script>
+</body>
 </html>
