@@ -76,6 +76,7 @@
                 if (check === 1) {
                     $('#display').html(search);
                     localStorage.setItem("message", search);
+                    return false;
                 } else {
                     $('#display').html("Not Found");
                     localStorage.setItem("message", "Not Found");
@@ -90,6 +91,8 @@
 
     $('#searchButton').click(() => {
         console.log('click');
+        check = 0;
+        document.getElementById("video").setAttribute("hidden", "");
         let message = $('#searchText').val();
         search = message;
         console.log(message);
