@@ -32,6 +32,8 @@
     <script type="text/javascript" src="word.json"></script>
     <script type="text/javascript" src="phrase.json"></script>
 
+    <!-- 932 Material Design Icons courtesy of Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon"
           type="image/png"
           href="images/icons/icon-144x144.png">
@@ -40,6 +42,15 @@
             width: 100%;
             height: auto;
         }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
     </style>
 
 </head>
@@ -47,7 +58,7 @@
 
 <nav class="nav-extended">
     <div class="nav-wrapper blue darken-4">
-        <a href="#" class="brand-logo center">WIP ASL translator PWA</a>
+        <a href="#" class="brand-logo center truncate"><i class="material-icons">pan_tool</i>2 Sign</a>
     </div>
 </nav>
 
@@ -59,19 +70,32 @@
             <button class="waves-effect waves-light btn-large" id="searchButton" type="button" name="button">
                 Submit
             </button>
-            <div class="card blue-grey darken-1">
+            <div class="card blue-grey darken-1 z-depth-4 hoverable">
+                <div class="card-image">
+                    <video id="video" class="responsive-video" auto autoplay loop hidden></video>
+                </div>
                 <div class="card-content white-text">
-                    <span class="card-title">Your message</span>
-                    <video id="video" class="responsive-video" auto autoplay loop hidden>
-                    </video>
-                    <p>
+                    <!--<span class="card-title">Your message</span>-->
+                    <!--<video id="video" class="responsive-video" auto autoplay loop hidden></video>-->
+                    <h5>
                     <div id="display">DISPLAY</div>
-                    </p>
+                    </h5>
                 </div>
             </div>
         </div>
     </div>
 </main>
+<footer class="page-footer">
+    <div class="container">
+        <p class="white-text">Note: this is a prototype as a proof of concept with limited ASL dictionary at the moment.</p>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <p class="grey-text text-lighten-4 left">IEEE Project 2018</p>
+            <p class="grey-text text-lighten-4 right">Stamford International University</p>
+        </div>
+    </div>
+</footer>
 
 <script type="text/javascript" src="scripts/app.js"></script>
 </body>
